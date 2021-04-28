@@ -27,7 +27,7 @@ class Autofetch extends Model
             $x = 'asc';
         }
         Cache::forget("$a");
-        $ao = Cache::remember("$a", $time, function () use ($a) {
+        $ao = Cache::remember("$a", $time, function () use ($a, $x) {
             $ao = DB::table($a)->orderby('id', $x)->first();
             return (object) $ao;
         });

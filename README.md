@@ -7,6 +7,15 @@
  ```
  composer require robertseghedi/laravue-autofetcher
  ```
+  Edit your root-project's composer.json and add
+  ```json
+ "autoload": {
+    "psr-4": {
+        // other
+        "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravue-autofetcher/src"
+    }
+},
+   ```
  Then, you have to add the provider to your ```config/app.php``` like that:
  ```php
  // your providers
@@ -43,17 +52,9 @@ methods: {
 }
  ```
  
- I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```fetch_full_database() ``` function:
-  ```php
-use RobertSeghedi\Autofetcher\Models\Autofetch;
-
-public function test($table = null)
-{
-     $x = Autofetch::fetch_full_database($table); // this is the important function
-     return $x;
-}
-  ```
-For now, it caches the table you mentioned for 1800 seconds. Soon that will be also customizable.
+| Command name | What it does |
+| --- | --- |
+| ```php Autofetch::database($a = 'users', $time = 1800)``` | Lists all the results from the table you mention|
 
 Now, you can use the result in your Vue component
  ```html
