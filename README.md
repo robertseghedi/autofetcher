@@ -11,7 +11,7 @@
   ```json
  "autoload": {
     "psr-4": {
-        // other
+        ...
         "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravue-autofetcher/src"
     }
 },
