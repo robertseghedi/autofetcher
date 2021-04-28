@@ -1,5 +1,5 @@
 {
-    "name": "robertseghedi/laravue-autofetcher",
+    "name": "robertseghedi/laravel-autofetcher",
     "description": "Powerful and efficient Laravel plugin for proper data-fetching & preparing for Vue component.",
     "license": "MIT",
     "authors": [
