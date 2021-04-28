@@ -5,7 +5,7 @@
  
  First, you have to install the package using composer in your project root folder:
  ```
- composer require robertseghedi/laravue-autofetcher --save-dev
+ composer require robertseghedi/laravue-autofetcher
  ```
  Then, you have to add the provider to your ```config/app.php``` like that:
  ```php
