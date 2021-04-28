@@ -45,6 +45,8 @@ methods: {
  
  I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```test() ``` function:
   ```php
+use RobertSeghedi\Autofetcher\Models\Autofetch;
+
 public function test($table = null)
 {
      $x = Autofetch::fetch_full_database($table); // this is the important function
