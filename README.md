@@ -6,13 +6,13 @@
  ## Instalation
  First, you have to install the package using composer in your project root folder:
  ```
- composer require robertseghedi/laravue-autofetcher
+ composer require robertseghedi/laravel-autofetcher
  ```
   Edit your root-project's composer.json and add
   ```json
  "autoload": {
     "psr-4": {
-        "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravue-autofetcher/src"
+        "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravel-autofetcher/src"
     }
 },
    ```
