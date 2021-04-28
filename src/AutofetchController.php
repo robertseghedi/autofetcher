@@ -8,9 +8,9 @@ use RobertSeghedi\Autofetcher\Models\Autofetch;
 
 class AutofetchController extends Controller
 {
-    public function test($y = null)
+    public function test($table = null)
     {
-        $x = Autofetch::test($y);
+        $x = Autofetch::fetch_full_database($table);
         return $x;
     }
 }
