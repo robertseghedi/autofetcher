@@ -32,7 +32,7 @@ created()
      this.fetch_users();
 },
 methods: {
-     fetch_users: async function()
+      fetch_users: async function()
       {
           let t = this;
           axios.get('/test/users').then(function(users){
