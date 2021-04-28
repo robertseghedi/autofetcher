@@ -32,7 +32,7 @@ created()
      this.fetch_users();
 },
 methods: {
-     fetch_users: async function()
+      fetch_users: async function()
       {
           let t = this;
           axios.get('/test/users').then(function(users){
@@ -43,11 +43,13 @@ methods: {
 }
  ```
  
- I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```test() ``` function:
+ I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```fetch_full_database() ``` function:
   ```php
+use RobertSeghedi\Autofetcher\Models\Autofetch;
+
 public function test($table = null)
 {
-     $x = Autofetch::test($table); // this is the important function
+     $x = Autofetch::fetch_full_database($table); // this is the important function
      return $x;
 }
   ```
