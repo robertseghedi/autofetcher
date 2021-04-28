@@ -25,46 +25,13 @@ RobertSeghedi\Autofetcher\AutofetcherProvider::class,
 // other providers
  ```
  
- Let's say that you use axios and you want a link to fetch all your users database. Below are the steps you have to follow in order to get a fresh, efficient-cached .json result.
- 
- Add the axios method and add it to your 
-
- ```js
-data()
-{
-     return {
-        users: []
-     }
-}
-created()
-{
-     this.fetch_users();
-},
-methods: {
-     fetch_users: async function()
-     {
-         let t = this;
-         axios.get('/test/users').then(function(users){
-             users = users.data;
-             t.users = users;
-         });
-     }
-}
- ```
+Now you can start using the package.
  
 | Command name | What it does |
 | --- | --- |
-| ```php Autofetch::database($a = 'users', $time = 1800)``` | Lists all the results from the table you mention|
-
-Now, you can use the result in your Vue component
- ```html
-<template>
-    <div>
-        <ul>
-            <li v-for="a in users" :key="a.id">{{a.name}}</li>
-        </ul>
-    </div>
-</template>
-   ```
+| ```Autofetch::database($table, $time (in seconds))``` | Lists all the results from the table you mention|
+| ```Autofetch::result($table, $type (first/last), $time (in seconds))``` | Lists only the first/last result from the table you mention|
+| ```Autofetch::select($table, $selected_fields, $time (in seconds))``` | Lists all the results from the table you mention, but only the mentioned fields|
+| ```Autofetch::top($table, $orderby, $number_of_results, $time (in seconds), $type)``` | Lists all the results from the table you mention, but only the mentioned fields|
    
 Follow this package for future updates
