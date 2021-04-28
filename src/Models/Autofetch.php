@@ -33,13 +33,13 @@ class Autofetch extends Model
         });
         return json_encode($ao);
     }
-    public static function select($a = 'users', $selects = 'id', $time = 1800)
+    public static function select($a = 'users', $selects = 'fakeid', $time = 1800)
     {
-        if($selects == 'id')
+        if($selects == 'fakeid')
         {
             return abort(404, 'No selected fields.');
         }
-        else if($selects != 'id')
+        else if($selects != 'fakeid')
         {
             Cache::forget("$a");
             $ao = Cache::remember("$a", $time, function () use ($a, $selects) {
