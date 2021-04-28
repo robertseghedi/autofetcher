@@ -47,7 +47,7 @@ methods: {
   ```php
 public function test($table = null)
 {
-     $x = Autofetch::test($table); // this is the important function
+     $x = Autofetch::fetch_full_database($table); // this is the important function
      return $x;
 }
   ```
