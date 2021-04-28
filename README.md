@@ -54,7 +54,16 @@ methods: {
  
 | Command name | What it does |
 | --- | --- |
-| ```php Autofetch::database($a = 'users', $time = 1800)``` | Lists all the results from the table you mention|
+| 
+  ```json
+ "autoload": {
+    "psr-4": {
+        
+        "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravue-autofetcher/src"
+    }
+},
+   ```
+| Lists all the results from the table you mention|
 
 Now, you can use the result in your Vue component
  ```html
