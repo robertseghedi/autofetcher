@@ -1,7 +1,7 @@
 # Laravel Autofetcher
  The most powerful and efficient Laravel plugin for proper data-fetching
  
- This is a fresh Laravel plugin which gets data from your database, caches it and gets it ready for your Vue component. It is really simple to use, so it might not be problematic. 
+ This is a fresh Laravel plugin which gets data from your database, caches it and gets it ready for displaying on your amazing page. It is really simple to use, so it might not puzzle you.
  
  ## Instalation
  First, you have to install the package using composer in your project root folder:
