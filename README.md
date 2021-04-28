@@ -16,7 +16,7 @@ RobertSeghedi\Autofetcher\AutofetcherProvider::class,
 // other providers
  ```
  
- Let's say that you use axios and you want a link to fetch all your users database. Below are to steps you have to follow in order to get a fresh, efficient-cached .json result.
+ Let's say that you use axios and you want a link to fetch all your users database. Below are the steps you have to follow in order to get a fresh, efficient-cached .json result.
  
  Add the axios method and add it to your 
 
@@ -32,14 +32,14 @@ created()
      this.fetch_users();
 },
 methods: {
-      fetch_users: async function()
-      {
-          let t = this;
-          axios.get('/test/users').then(function(users){
-              users = users.data;
-              t.users = users;
-          });
-      }
+     fetch_users: async function()
+     {
+         let t = this;
+         axios.get('/test/users').then(function(users){
+             users = users.data;
+             t.users = users;
+         });
+     }
 }
  ```
  
