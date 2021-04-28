@@ -43,7 +43,7 @@ methods: {
 }
  ```
  
- I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```test() ``` function:
+ I already added the ```/test/{table?}``` route, but it is flexible. It calls the following  ```fetch_full_database() ``` function:
   ```php
 use RobertSeghedi\Autofetcher\Models\Autofetch;
 
