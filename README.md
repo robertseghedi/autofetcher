@@ -11,7 +11,6 @@
   ```json
  "autoload": {
     "psr-4": {
-        // other
         "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravue-autofetcher/src"
     }
 },
@@ -21,17 +20,15 @@
  // your providers
 
 RobertSeghedi\Autofetcher\AutofetcherProvider::class, 
-
-// other providers
  ```
  
 Now you can start using the package.
  
 | Command name | What it does |
 | --- | --- |
-| ```Autofetch::database($table, $time (in seconds))``` | Lists all the results from the table you mention|
-| ```Autofetch::result($table, $type (first/last), $time (in seconds))``` | Lists only the first/last result from the table you mention|
-| ```Autofetch::select($table, $selected_fields, $time (in seconds))``` | Lists all the results from the table you mention, but only the mentioned fields|
-| ```Autofetch::top($table, $orderby, $number_of_results, $time (in seconds), $type)``` | Lists all the results from the table you mention, but only the mentioned fields|
+| Autofetch::database($table, $time (in seconds)) | Lists all the results from the table you mention|
+| Autofetch::result($table, $type (first/last), $time (in seconds)) | Lists only the first/last result from the table you mention|
+| Autofetch::select($table, $selected_fields, $time (in seconds)) | Lists all the results from the table you mention, but only the mentioned fields|
+| Autofetch::top($table, $orderby, $number_of_results, $time (in seconds), $type) | Lists all the results from the table you mention, but only the mentioned fields|
    
 Follow this package for future updates
