@@ -1,0 +1,13 @@
+{
+    "name": "robertseghedi/autofetch",
+    "description": "Advanced autofetcher for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Seghedi",
+            "email": "robertseghedi123@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
