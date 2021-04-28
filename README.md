@@ -31,6 +31,7 @@ RobertSeghedi\Autofetcher\AutofetcherProvider::class,
 | Autofetch::result($table, $type (first/last), $time - in seconds) | Lists only the first/last result from the table you mention|
 | Autofetch::select($table, $selected_fields, $time - in seconds) | Lists all the results from the table you mention, but only the mentioned fields|
 | Autofetch::top($table, $orderby, $number_of_results, $time - in seconds, $type) | Lists all the results from the table you mention, but only the mentioned fields|
+| Autofetch::lazy($table, $orderby, $number_of_results, $time - in seconds) | Lazy-lists all the results from the table you mention, but only as much results as you mentioned|
    
 ## Usage
 

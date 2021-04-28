@@ -78,4 +78,16 @@ class Autofetch extends Model
             return json_encode($ao);
         }
     }
+    public static function lazy($a = 'users', $time = 1800, $results = 10, $orderby = 'id')
+    {
+        $string = "lazy_$a";
+        Cache::forget($string);
+        $ao = Cache::remember($string, $time, function () use ($orderby, $a, $results) {
+            $ao = DB::table($a)->orderby($orderby)->take($results)->get()->lazy()->each(function($b){
+
+            });
+            return (object) $ao;
+        });
+        return json_encode($ao);
+    }
 }
