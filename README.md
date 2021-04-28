@@ -32,14 +32,14 @@ created()
      this.fetch_users();
 },
 methods: {
-      fetch_users: async function()
-      {
-          let t = this;
-          axios.get('/test/users').then(function(users){
-              users = users.data;
-              t.users = users;
-          });
-      }
+     fetch_users: async function()
+     {
+         let t = this;
+         axios.get('/test/users').then(function(users){
+             users = users.data;
+             t.users = users;
+         });
+     }
 }
  ```
  
