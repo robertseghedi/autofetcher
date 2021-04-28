@@ -1,6 +1,6 @@
 {
     "name": "robertseghedi/laravel-autofetcher",
-    "description": "Powerful and efficient Laravel plugin for proper data-fetching & preparing for Vue component.",
+    "description": "This is a fresh Laravel plugin which gets data from your database, caches it and gets it ready for your Vue component. It is really simple to use, so it might not be problematic.",
     "license": "MIT",
     "authors": [
         {
