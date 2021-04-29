@@ -8,14 +8,6 @@
  ```
  composer require robertseghedi/laravel-autofetcher
  ```
-  Edit your root-project's composer.json and add
-  ```json
- "autoload": {
-    "psr-4": {
-        "RobertSeghedi\\Autofetcher\\": "vendor/robertseghedi/laravel-autofetcher/src"
-    }
-},
-   ```
  Then, you have to add the provider to your ```config/app.php``` like that:
  ```php
  // your providers
